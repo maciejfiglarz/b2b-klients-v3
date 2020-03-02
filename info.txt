@@ -1,0 +1,12 @@
+refs-#10619
+
+
+php bin/console doctrine:database:drop --force
+php bin/console doctrine:database:create
+
+
+php bin/console doctrine:fixtures:load
+php bin/console doctrine:schema:update --force
+
+
+$argon2i$v=19$m=65536,t=4,p=1$dllOOXR5dmpJaGtacG8uaw$4V2I2+QKhsMaEDH8UpbHCIT5FLrTeumPyPpeUI/ez2Q
